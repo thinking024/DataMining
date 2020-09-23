@@ -16,7 +16,7 @@ public class Main {
         int[][] testImages = MnistRead.getImages(TEST_IMAGES_FILE);
         int[] testLabels = MnistRead.getLabels(TEST_LABELS_FILE);
 
-        for (int k = 1; k <= 30; k++) {
+        /*for (int k = 1; k <= 30; k++) {
             int count = 0;
             for (int i = 0; i < testImages.length; i++) {
                 int myLabel = KnnForMnist.knn(trainImages, trainLabels, testImages[i],k);
@@ -25,8 +25,8 @@ public class Main {
                 }
             }
             System.out.println("k=" + k + ", count=" + count);
-        }
-//        System.out.println(KnnForMnist.knn(trainImages, trainLabels, testImages[1], 10));
+        }*/
+        System.out.println(KnnForMnist.knn(trainImages, trainLabels, testImages[1], 10));
         /*for (int i = 0; i < trainImages.length; i++) {
             drawGrayPicture(trainImages[i],28,28,"E:\\Java_program\\DataMining\\KNN\\images\\training_set\\training_set" + i + ".jpeg");
         }*/
